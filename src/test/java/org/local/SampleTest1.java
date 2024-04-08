@@ -28,14 +28,14 @@ public class SampleTest1 {
   }
   
   @Test
-  public void f() throws InterruptedException {
+  public void test1() throws InterruptedException {
     driver.findElement(By.name("q")).sendKeys("selenium grid\n");
     Thread.sleep(3000);
     
   }
 
   @AfterTest
-  public void afterTest() {
+  public void afterTest() {	
 	  driver.close();
 	  driver.quit();
   }
